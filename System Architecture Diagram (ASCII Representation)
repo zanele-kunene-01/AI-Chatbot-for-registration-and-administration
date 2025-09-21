@@ -1,0 +1,21 @@
+[Student Devices]  
+   |-- WhatsApp Messenger (Mobile/Desktop)  
+        |  
+ [WhatsApp Business Cloud API]   <--->   [Webhook to Chatbot Backend on Render]  
+        |  
+   [Chatbot Backend (Python Flask/Rasa)]  
+        |  
+   +----------------------------+  
+   |   Knowledge Base (FAQs)    |  
+   |   Static Registration Info |  
+   |   Preloaded Documents Data |  
+   +----------------------------+  
+        |  
+   [Database Layer]  
+   |-- PostgreSQL (Conversations, Users, FAQs)  
+   |-- Redis (Session Cache)  
+        |  
+   [Admin Dashboard & Analytics]  
+   |-- Staff can view chatbot logs  
+   |-- Update FAQs / responses  
+   |-- Monitor usage metrics  
