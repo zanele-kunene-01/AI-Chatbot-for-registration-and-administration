@@ -1,0 +1,14 @@
+[WhatsApp Business Cloud API] 
+        |
+   [Chatbot Backend] 
+        |
+   +-------------------------------+
+   |        Integration Layer      |
+   |  (API Gateway & Connectors)   |
+   +-------------------------------+
+      |            |            |
+   [SIS]       [Finance]   [Doc Mgmt]
+      |
+   [PostgreSQL DB] ---- [Redis Cache]
+      |
+   [Object Storage: S3-compatible]
